@@ -119,50 +119,53 @@ function addExtraProd(EP) {
 }
 /* Секундомер при открытий сайта */
 
-/* 
-const headerTimer = document.querySelector('.header__timer-extra');
-let counter = 0;
-let timerId;
-let timerInterval = 300;
 
-document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOM полностью загружен и разобран");
-    timerId = setInterval(function() {
-        counter++;
-        if (counter > 50 && counter < 90) {
-            timerInterval = 500;
-            clearInterval(timerId);
-            timerId = setInterval(updateCounter, timerInterval);
-        } else if (counter >= 90) {
-            timerInterval = 2000;
-            clearInterval(timerId);
-            timerId = setInterval(updateCounterTwo, timerInterval);
-        }
+var headerTimer = document.querySelector('.header__timer-extra');
+var counter = 0;
+var timerId;
+var timerInterval = 300;
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("DOM полностью загружен и разобран");
+  timerId = setInterval(function () {
+    counter++;
 
-        if (counter > 100) {
-            counter = 100;
-        }
-        headerTimer.innerHTML = counter;
-    }, timerInterval);
+    if (counter > 50 && counter < 90) {
+      timerInterval = 500;
+      clearInterval(timerId);
+      timerId = setInterval(updateCounter, timerInterval);
+    } else if (counter >= 90) {
+      timerInterval = 2000;
+      clearInterval(timerId);
+      timerId = setInterval(updateCounterTwo, timerInterval);
+    }
+
+    if (counter > 100) {
+      counter = 100;
+    }
+
+    headerTimer.innerHTML = counter;
+  }, timerInterval);
 });
 
 function updateCounter() {
-    counter++;
-    if (counter > 100) {
-        counter = 100;
-    }
-    headerTimer.innerHTML = counter;
+  counter++;
+
+  if (counter > 100) {
+    counter = 100;
+  }
+
+  headerTimer.innerHTML = counter;
 }
 
 function updateCounterTwo() {
-    counter++;
-    if (counter > 100) {
-        counter = 100;
-    }
-    headerTimer.innerHTML = counter;
-}
- */
+  counter++;
 
+  if (counter > 100) {
+    counter = 100;
+  }
+
+  headerTimer.innerHTML = counter;
+}
 
 addCart.addEventListener('click', function () {
   var arrayProduct = [],

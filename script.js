@@ -114,7 +114,7 @@ function addExtraProd(EP) {
 }
 
 /* Секундомер при открытий сайта */
-/* 
+
 const headerTimer = document.querySelector('.header__timer-extra');
 let counter = 0;
 let timerId;
@@ -156,7 +156,7 @@ function updateCounterTwo() {
     }
     headerTimer.innerHTML = counter;
 }
- */
+
 
 
 addCart.addEventListener('click', function () {
