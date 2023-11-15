@@ -280,7 +280,7 @@ a {
     font-family: 'Times New Roman', Times, serif;
 }
 .receipt.active .receipt__window{
-    width: 30%;
+    width: max-content;
     min-height: 50%;
     background: #fff;
     border-radius: 6px;
