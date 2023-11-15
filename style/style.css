@@ -277,6 +277,7 @@ a {
     transition: 0.5s;
     justify-content: center;
     align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 .receipt.active .receipt__window{
     width: 30%;
